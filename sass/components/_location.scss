@@ -3,25 +3,68 @@
     height: 550px;
     width: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 375px 550px;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    a{
+        @include breakpoint(tablet){
+            margin-left: 40px;
+        }
+        @include breakpoint(desktop){
+            margin-left: 156px;
+        }
+    }
 
 
 }
 .location-information{
     background-color: $black;
+    @include breakpoint(tablet){
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    @include breakpoint(desktop){
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .address{
+        @include breakpoint(tablet){
+            margin: 88px 40px 80px 68px ;
+        }
+        @include breakpoint(desktop){
+            margin: 104px 165px 128px 0px ;
+        }
+    }
 
     margin-bottom: 0;
     h1{
         color: white;
         padding: 48px 16px;
+        @include breakpoint(tablet){
+            margin: 0 ;
+            padding: 88px 0px 0px 39px;
+            
+        }
+        @include breakpoint(desktop){
+            margin: 0 ;
+            padding: 104px 0px 0px 165px;
+            font-size: 70px;
+            line-height: 70px;
+            width: 140px;
+        }
+
     }
     p{
         color: white;
         padding: 0px 16px 20px 16px;
         &:last-of-type{
             padding-bottom: 56px;
+            @include breakpoint(tablet){
+            padding-bottom: 0px;
+            
+        }
         }
     }
 

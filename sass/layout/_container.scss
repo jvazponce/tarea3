@@ -3,4 +3,7 @@
     @include breakpoint(tablet){
         max-width: 1024px
         }
+        @include breakpoint(desktop){
+        max-width: 1440px;
+        }
 }

@@ -13,6 +13,38 @@
 
 
     }
+    @include breakpoint(desktop){
+        background-image: url('../img/art1-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position:top left 450px;
+        background-size:540px 800px;
+        
+
+        
+        padding: 0;
+        &::before{
+            content: "";
+            background-color: $black;
+            width: 450px;
+            height: 799px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+        }  
+        
+        
+
+
+    }
+    &__content{
+        @include breakpoint(desktop){
+            display: flex;
+            
+        }
+    }
+    
             
 
 
@@ -23,6 +55,12 @@
         margin-bottom: 32px;
         max-width: 100%;
         @include breakpoint(tablet){
+            display: none;
+
+            
+
+        }
+        @include breakpoint(desktop){
             display: none;
 
             
@@ -43,6 +81,15 @@
             
 
         }
+        @include breakpoint(desktop){
+            margin: 165px 246px 0px 165px;
+            font-size: 96px;
+            line-height: 88px;
+            color: white;
+            
+            
+        }
+        
         
     }
     p{
@@ -54,10 +101,29 @@
             
 
         }
+        @include breakpoint(desktop){
+            margin: 190px 164px 64px 475px;
+
+
+            
+
+        }
+        @include breakpoint(desktop){
+            margin: 190px 164px 64px 0px;
+            max-width: 350px;
+            
+            
+        }
     }
     &__button{
         margin-bottom: 120px;
         
+        @include breakpoint(desktop){
+            margin: 0px 254px 0px 905px;
+            max-width: 350px;
+            padding-bottom: 494px;
+            
+        }
     }
        
     

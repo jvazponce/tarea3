@@ -6,12 +6,22 @@
         align-items: center;
         height: 216px;
     }
+    @include breakpoint(desktop){
+        display: flex;
+        align-items: center;
+        height: 244px;
+    }
     .logotipo{
         padding: 48px 32px 38px 32px;
         @include breakpoint(tablet){
         padding: 56px 65px 120px 40px;
     
-    }
+        }
+        @include breakpoint(desktop){
+        padding: 80px 140px 106px 165px;
+        
+    
+        }
     }
     p{
         color: white;
@@ -27,7 +37,12 @@
         display: flex;
         align-items: center;
         padding: 56px 40px 140px 133px;
-    }
+        }
+        @include breakpoint(desktop){
+        display: flex;
+        align-items: center;
+        padding: 80px 165px 144px 280px;
+        }
         img{
            padding-right: 20px;
            
@@ -38,8 +53,29 @@
 .footer2{
     background-color: $gold;
     height: 336px;
+    @include breakpoint(tablet){
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+        
+    }
+    @include breakpoint(desktop){
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+        
+    }
     .logotipo{
         padding: 48px 32px 38px 32px;
+        @include breakpoint(tablet){
+        padding: 56px 32px 120px 40px;
+        
+        }
+        @include breakpoint(desktop){
+        padding: 80px 140px 106px 165px;
+        
+        
+        }
     }
     p{
         color: $black;
@@ -48,9 +84,32 @@
         font-size: 16px;
         line-height: 26px;
         font-weight: 400;
+        @include breakpoint(tablet){
+        margin-top: 56px;
+        
+        }
+        @include breakpoint(desktop){
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-size: 18px;
+        line-height: 28px;
+        
+        }
     }
     .social{
         padding: 48px 32px;
+        @include breakpoint(tablet){
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+        
+        }
+        @include breakpoint(desktop){
+        display: flex;
+        justify-content: space-evenly;
+        padding: 80px 165px 144px 280px ;
+        
+        }
         img{
            padding-right: 20px;
            
