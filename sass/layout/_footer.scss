@@ -1,0 +1,59 @@
+.footer{
+    background-color: $black;
+    height: 336px;
+    @include breakpoint(tablet){
+        display: flex;
+        align-items: center;
+        height: 216px;
+    }
+    .logotipo{
+        padding: 48px 32px 38px 32px;
+        @include breakpoint(tablet){
+        padding: 56px 65px 120px 40px;
+    
+    }
+    }
+    p{
+        color: white;
+        margin-left: 32px;
+        margin-right: 32px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+    .social{
+        padding: 48px 32px;
+        @include breakpoint(tablet){
+        display: flex;
+        align-items: center;
+        padding: 56px 40px 140px 133px;
+    }
+        img{
+           padding-right: 20px;
+           
+        }
+    }
+}
+
+.footer2{
+    background-color: $gold;
+    height: 336px;
+    .logotipo{
+        padding: 48px 32px 38px 32px;
+    }
+    p{
+        color: $black;
+        margin-left: 32px;
+        margin-right: 32px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+    .social{
+        padding: 48px 32px;
+        img{
+           padding-right: 20px;
+           
+        }
+    }
+}

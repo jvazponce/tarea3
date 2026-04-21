@@ -1,0 +1,65 @@
+.hero{
+    @include breakpoint(tablet){
+        background-image: url('../img/art1-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 437px 700px;
+        
+
+        
+        padding: 145px 40px 120px 389px;  
+        
+        
+
+
+    }
+            
+
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        max-width: 100%;
+        @include breakpoint(tablet){
+            display: none;
+
+            
+
+        }
+
+    }
+    
+    
+    h1{
+        margin-bottom: 32px;
+        margin-right: 16px;
+        margin-left: 16px;
+        @include breakpoint(tablet){
+            margin-bottom: 48px;
+
+
+            
+
+        }
+        
+    }
+    p{
+        margin: 0 16px 32px 16px;
+        @include breakpoint(tablet){
+            margin-bottom: 48px;
+            
+
+            
+
+        }
+    }
+    &__button{
+        margin-bottom: 120px;
+        
+    }
+       
+    
+}
+

@@ -1,0 +1,31 @@
+.tittle{
+    font-family: $tittle-font;
+    color: $black;
+    font-size: 60px;
+    line-height: 55px;
+    font-weight: 900px;
+    @include breakpoint(tablet){
+            font-size: 70px;
+            line-height: 65px;
+
+            
+
+        }
+}
+.text{
+    font-family: $principal-font;
+    color: $gray;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 18px;
+
+}
+
+.subtittle{
+    color: $gold;
+    font-weight: 900;
+    font-family: $tittle-font;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0 16px 20px 16px;
+}

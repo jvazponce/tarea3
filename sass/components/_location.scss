@@ -1,0 +1,28 @@
+.map{
+    background-image: url(../img/maps.png);
+    height: 550px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 375px 550px;
+
+
+}
+.location-information{
+    background-color: $black;
+
+    margin-bottom: 0;
+    h1{
+        color: white;
+        padding: 48px 16px;
+    }
+    p{
+        color: white;
+        padding: 0px 16px 20px 16px;
+        &:last-of-type{
+            padding-bottom: 56px;
+        }
+    }
+
+}
